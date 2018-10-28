@@ -4,7 +4,7 @@ pipeline{
 		stage ('Build'){
 			steps{
 				sh '/home/raul/maven/bin/mvn clean package'
-				sh 'docker build . -t tomcatwebapp:${env.BUILD_ID}'
+				sh 'docker build . -t tomcatwebapp:test'
 			}
 
 		}
